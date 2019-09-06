@@ -10,7 +10,7 @@ class ExternalUser(models.Model):
     app_id = models.CharField(max_length=50, blank=False, null=False)
     external_id = models.CharField(max_length=50, blank=False, null=False)
     display_name = models.CharField(max_length=50, blank=False, null=False)
-    full_name = models.CharField(max_length=50, blank=True, null=True)
+    full_name = models.CharField(default=None, max_length=50, blank=True, null=True)
 
     def __str__(self):
         return f"{self.display_name or self.external_id} ({self.app_id})"
