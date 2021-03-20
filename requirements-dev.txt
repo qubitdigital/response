@@ -12,7 +12,7 @@ Django==2.2.4
 django-after-response==0.2.2
 django-bootstrap4==0.0.8
 -e ./
-djangorestframework==3.10.1
+djangorestframework==3.11.2
 docopt==0.6.2
 emoji-data-python==1.1.0
 factory-boy>=2.12.0
